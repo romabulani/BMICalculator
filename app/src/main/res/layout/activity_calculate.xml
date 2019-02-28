@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bfefff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.romabulani.bmicalculator.CalculateActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUnderweight"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvUnderweight"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvUnderweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Below 18.5 is Underweight"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tvNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUnderweight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Between 18.5 to 25 is Normal"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tvOverweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNormal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Between 25 to 30 is Overweight"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tvObese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOverweight"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:text="More than 30 is Obese"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvObese"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/backbutton"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnShare"
+        android:background="@drawable/round_button"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnBack"
+        android:layout_alignBottom="@+id/btnBack"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sharebutton"
+        android:text="Share"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabTts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvNormal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tvNormal"
+        android:clickable="true"
+        app:backgroundTint="?attr/colorPrimaryDark"
+        app:elevation="8dp"
+        app:fabSize="normal"
+        app:rippleColor="?attr/colorBackgroundFloating"
+        app:srcCompat="@drawable/ic_keyboard_voice_black_60dp" />
+
+
+</RelativeLayout>

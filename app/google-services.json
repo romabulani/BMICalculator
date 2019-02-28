@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "903908025928",
+    "firebase_url": "https://chat-a152e.firebaseio.com",
+    "project_id": "chat-a152e",
+    "storage_bucket": "chat-a152e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903908025928:android:3788bd116f833e12",
+        "android_client_info": {
+          "package_name": "com.example.romabulani.bmicalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903908025928-5pcljk7bus7mgbu4iaai8u0erl9qf71f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.romabulani.bmicalculator",
+            "certificate_hash": "ecff0e46a93b30d5dd46d416019d18b9a053769a"
+          }
+        },
+        {
+          "client_id": "903908025928-0v572j7p9ppo4b7jmc2lj2t8fde2d763.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPQPkjWVU0n8GELT82z6igg2wjssmi3zU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903908025928-0v572j7p9ppo4b7jmc2lj2t8fde2d763.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
